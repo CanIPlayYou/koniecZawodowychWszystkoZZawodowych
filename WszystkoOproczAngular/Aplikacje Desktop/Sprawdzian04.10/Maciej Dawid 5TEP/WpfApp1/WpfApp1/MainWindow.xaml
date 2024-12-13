@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="GraWKosci" Height="450" Width="800" Background="#FF1AB1BB">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100px"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175px"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="175px"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Pozostałe rzuty: " HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" FontSize="20px"/>
+            <TextBox x:Name="pozostaleRzutyTextBox" HorizontalAlignment="Center" Margin="0,52,0,0" TextWrapping="Wrap" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="58" Height="36" Foreground="Orange" FontWeight="Bold" FontSize="30px"/>
+
+            <Label Content="Aktualny wynik: " HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" FontSize="20px" />
+            <TextBox x:Name="aktualnyWynikTextBox" HorizontalAlignment="Center" Margin="0,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="58" TextAlignment="Center" Height="36" Foreground="Orange" FontWeight="Bold" FontSize="30px"/>
+
+            <Label Grid.Column="2" Content="Tabela wyników: " HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" FontSize="20px"/>
+            <ListBox x:Name="tabelaWynikowListBox" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="19,85,10,118"/>
+
+            <Button x:Name="btnDice1" Grid.Column="1" HorizontalAlignment="Left" Margin="50,198,0,0" VerticalAlignment="Top" Height="50" Width="50">
+                <Image x:Name="btnDice1Image" Source="images/question.png" Height="50" Width="50"/>
+            </Button>
+
+            <Button x:Name="btnDice2" Grid.Column="1" HorizontalAlignment="Left" Margin="120,198,0,0" VerticalAlignment="Top" Height="50" Width="50">
+                <Image x:Name="btnDice2Image" Source="images/question.png" Height="50" Width="50"/>
+            </Button>
+
+            <Button x:Name="btnDice3" Grid.Column="1" HorizontalAlignment="Left" Margin="190,198,0,0" VerticalAlignment="Top" Height="50" Width="50">
+                <Image x:Name="btnDice3Image" Source="images/question.png" Height="50" Width="50"/>
+            </Button>
+
+            <Button x:Name="btnDice4" Grid.Column="1" HorizontalAlignment="Left" Margin="260,198,0,0" VerticalAlignment="Top" Height="50" Width="50">
+                <Image x:Name="btnDice4Image" Source="images/question.png" Height="50" Width="50"/>
+            </Button>
+
+            <Button x:Name="btnDice5" Grid.Column="1" HorizontalAlignment="Left" Margin="330,198,0,0" VerticalAlignment="Top" Height="50" Width="50">
+                <Image x:Name="btnDice5Image" Source="images/question.png" Height="50" Width="50"/>
+            </Button>
+
+
+
+        </Grid>
+        <Button x:Name="rzucKoscmiButton" Content="Rzuć Kośćmi" HorizontalAlignment="Left" FontWeight="Bold" Margin="190,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="200px" Height="50px"  FontSize="18" Background="#FF0D2000" Foreground="White" Click="rzucKoscmiButton_Click"/>
+        <Button x:Name="nowaGraButton" Content="Nowa Gra" HorizontalAlignment="Left" FontWeight="Bold" Margin="410,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="200px" Height="50px"  FontSize="18" Background="#FF0D2000" Foreground="White"/>
+
+
+
+    </Grid>
+</Window>

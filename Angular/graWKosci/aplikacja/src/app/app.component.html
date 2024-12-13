@@ -1,0 +1,7 @@
+<!--<img src="{{pathImg}}kosc{{kosciValue[0]}}.png" width="40px" height="40px" alt="kosc1"/> --> <!--w 24 linijce w angular.json trzeba wpisac sciezke do zdjec-->
+
+<img *ngFor="let value of kosciValue" src="{{pathImg}}kosc{{value}}.png" width="40px" height="40px" alt="{{value}}"/>
+
+<div>
+  <button (click)="losuj()">Losuj</button>
+</div>

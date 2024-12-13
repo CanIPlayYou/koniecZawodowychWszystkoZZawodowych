@@ -1,0 +1,59 @@
+//Z mainActivity
+val fragment = FirstFragment();
+val bundle = Bundle()
+bundle.putString("message", "Witaj")
+fragment.arguments = bundle
+
+supportFragmentManager.beginTransaction().add(R.id.first_fragment, fragment).commit()
+
+
+//Odbior wiadomości w fragmencie
+val message = arguments.getString("message")
+
+
+
+
+
+
+
+//z fragmentu do main
+
+
+//we fragmencie
+interface OnFragmentInteractionListner{
+	fun onFragmentInteraction(message: String)
+}
+
+
+
+private var listner:OnFragmentInteractionListner?=null
+
+
+override fun OnAttach(context: Context) {
+	super.onAttach(context)
+	listner = if(context is OnFragmentInteractionListner){
+		context
+	}else{
+		throw RuntimeException("$context musi implementować OnFragmentInteractionListner")
+	}
+
+override fun onDetach(){
+	super.onDetach()
+	listner=null
+
+//buton w fragmencie
+btn.setOnClickListner{
+	val dataToSend = "Dane z FirstFragment"
+	listner?.onFragmentInteraction(dataToSend)
+}
+
+
+
+//W main
+class MainActivity : AppCompatActivity(), FirstFragment.OnFragmentInteractionListner{
+
+...
+
+override fun onFragmentInteraction(){
+	Toast.makeText(this, "Otrzymano dane: $message", Toast.LENGHT.LONG).show()
+}

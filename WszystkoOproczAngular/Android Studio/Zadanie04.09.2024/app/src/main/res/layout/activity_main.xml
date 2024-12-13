@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcb9a1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageViewCard"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:contentDescription="Card Image"
+        android:src="@drawable/card_2_of_clubs" />
+
+    <Button
+        android:id="@+id/buttonDraw"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ae8f7a"
+        android:text="Losuj" />
+
+    <ListView
+        android:id="@+id/listViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

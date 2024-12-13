@@ -1,0 +1,43 @@
+<div class="generowanieHaslaMainWindow">
+
+    <h1>Generowanie hasła</h1>
+
+    <div class="formGenerowanieHasla">
+
+        <form>
+
+            <div class="ileZnakowForm">
+                <h3>Ile znaków? </h3>
+                <input type="text" class="form-control w-50" id="iloscZnakow" placeholder="Ilość znaków: " #iloscZnakow>
+            </div>
+
+            <div class="maleIWielkieForm">
+                <input class="form-check-input" type="checkbox" value="" id="maleWielkieCheckbox" (change)="wielkieOnChange($event)">
+                <label class="form-check-label" for="maleWielkieCheckbox">
+                    Małe i wielkie litery
+                </label>
+            </div>
+
+            <div class="cyfryForm">
+                <input class="form-check-input" type="checkbox" value="" id="cyfryCheckbox" (change)="cyfryOnChange($event)">
+                <label class="form-check-label" for="cyfryCheckbox">
+                    Cyfry
+                </label>
+            </div>
+
+            <div class="znakiSpecjalneForm">
+                <input class="form-check-input" type="checkbox" value="" id="specjalneCheckbox" (change)="specjalneOnChange($event)">
+                <label class="form-check-label" for="specjalneCheckbox">
+                    Znaki specjalne
+                </label>
+            </div>
+
+        </form>
+
+        <button class="btn btn-primary mt-5" (click)="generuj(iloscZnakow.value)">Generuj hasło</button>
+
+        <p>{{wygenerowaneHasloMessage}}</p>
+
+    </div>
+
+</div>

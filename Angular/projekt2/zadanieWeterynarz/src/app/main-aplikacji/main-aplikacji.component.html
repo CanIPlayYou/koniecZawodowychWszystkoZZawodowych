@@ -1,0 +1,24 @@
+<div class="mainWindow">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card p-4 shadow-sm" style="width: 400px; margin-top: 35px;">
+            <input type="text" class="form-control" id="imieNazwiskoText" placeholder="Imię i nazwisko właściciela…" #imieNazwiskoWlas>
+
+            <p style="margin: 0px; margin-top: 20px;">Gatunek</p>
+            <select class="form-select" multiple aria-label="Multiple select example" (click)="onChangee(rodzajZwierzecia.value)" #rodzajZwierzecia>
+                <option value="1">Pies</option>
+                <option value="2">Kot</option>
+                <option value="3">Świnka morska</option>
+              </select>
+
+            <div class="container d-flex justify-content-center align-items-center mt-4">
+                <p>Ile ma lat? {{rangeValue}} </p>
+                <input type="range" class="form-range" id="customRange" min="1" max="{{rangeMax}}" (input)="onRange($event)">
+            </div>
+
+            <input type="text" class="form-control" id="celWizytyText" placeholder="Cel wizyty" style="margin-top: 10px;" #celWizyty>
+            <input type="time" class="form-control" id="dataWizytyDate" value="16:00" style="margin-top: 20px;" #godzinaWizyty>
+
+            <button class="btn btn-primary mt-4" (click)="okButton(imieNazwiskoWlas.value, rodzajZwierzecia.value, celWizyty.value, godzinaWizyty.value)">OK</button>
+        </div>
+    </div>
+</div>

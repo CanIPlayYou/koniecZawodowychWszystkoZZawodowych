@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fffb9d"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/LogowanieTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logowanie:"
+        android:textSize="25sp"
+        android:textColor="#096db1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Wpisz e-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="25sp"
+        android:textColor="#103748"
+        android:textColorHint="#096db1"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Wpisz hasło"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:textColor="#103748"
+        android:textColorHint="#096db1"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/zalogujButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zaloguj"
+        android:textSize="25sp"
+        android:backgroundTint="#096db1"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="8dp"
+        android:text="Błędne hasło. Spróbuj ponownie"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+</LinearLayout>

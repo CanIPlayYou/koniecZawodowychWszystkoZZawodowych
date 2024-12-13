@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c566a"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevImgButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="#3b4252"
+            android:text="⬅"
+            android:textSize="20dp"
+            app:cornerRadius="0dp" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/zd1" />
+
+        <Button
+            android:id="@+id/nextImgButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="#3b4252"
+            android:text="➡"
+            android:textSize="20dp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:numStars="6"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#2e3440"
+        android:rating="1"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/sendRatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#3b4252"
+        android:text="Oceń"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/showRatingWindowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="435dp"
+        android:height="60dp"
+        android:backgroundTint="#3b4252"
+        android:text="Wyświetl ocecny"
+        android:textSize="16sp" />
+</LinearLayout>

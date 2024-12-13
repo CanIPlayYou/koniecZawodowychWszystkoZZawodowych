@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    android:id="@+id/main">
+
+
+    <TextView
+        android:id="@+id/nickText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:text="Podaj nick:"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nickTextInput"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Nick:"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/applyNickBtn"
+        android:layout_width="169dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#D2691E"
+        android:text="OK" />
+</LinearLayout>

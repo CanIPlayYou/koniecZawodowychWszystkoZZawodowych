@@ -1,0 +1,22 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-sm" style="width: 400px;">
+        <h2 class="card-title text-center">Zapisz imię</h2>
+        <div class="mb-3">
+            <label for="imie" class="form-label">Imię:</label>
+            <input type="text" id="imie" class="form-control" name="imie" #valueName>
+        </div>
+        <button class="btn btn-success w-100" (click)="SaveName(valueName.value)">Zapisz</button>
+
+        <div *ngIf="wypelnionePole" class="alert alert-success mt-3" id="resultDiv">
+            <p><b>{{imie}}</b></p>
+        </div>
+
+        <div *ngIf="pustePole" class="alert alert-danger mt-3" id="resultDiv">
+            <p><b>Nie wprowadzono imienia</b></p>
+        </div>
+
+
+    </div>
+    
+</div>
+

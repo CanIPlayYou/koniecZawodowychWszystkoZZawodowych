@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\5tp\\Desktop\\Maciej Dawid 5TEP\\Egzamin\\Egz2\\Maciej Dawid 5TEP\\konsola\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7E41DA-5D7D-4D4C-BA4F-4C43D1FF0604}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\5tp\\desktop\\maciej dawid 5tep\\egzamin\\egz2\\maciej dawid 5tep\\konsola\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB7E41DA-5D7D-4D4C-BA4F-4C43D1FF0604}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\5tp\\Desktop\\Maciej Dawid 5TEP\\Egzamin\\Egz2\\Maciej Dawid 5TEP\\konsola\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\5tp\\Desktop\\Maciej Dawid 5TEP\\Egzamin\\Egz2\\Maciej Dawid 5TEP\\konsola\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowBMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T08:35:38.548Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

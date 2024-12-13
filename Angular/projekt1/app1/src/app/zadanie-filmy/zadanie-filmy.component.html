@@ -1,0 +1,16 @@
+<div class="mb-3 w-100 p-2">
+    <label for="imie" class="form-label">Tytuł filmu:</label>
+    <input type="text" id="imie" class="form-control" name="imie" #tytulFilmu>
+
+    <label for="rodzaj" class="form-label">Rodzaj:</label>
+    <select class="form-control" id="selectFilm" #kategoriaFilmu>
+        <option value="1">Komedia</option>
+        <option value="2">Obyczajowy</option>
+        <option value="3">Sensacyjny</option>
+        <option value="4">Horror</option> 
+      </select>
+
+    <button class="btn btn-primary mt-2" (click)="save(tytulFilmu.value, kategoriaFilmu.value)">Dodaj</button>
+</div>
+
+<app-view-film [viewFilm]="viewFilm"></app-view-film>

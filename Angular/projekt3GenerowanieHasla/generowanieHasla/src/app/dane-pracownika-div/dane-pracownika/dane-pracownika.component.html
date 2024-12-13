@@ -1,0 +1,33 @@
+<div class="danePracownikaWindowMain">
+
+    <h1>Dane pracownika</h1>
+
+    <div class="formDanePracownika">
+
+        <form>
+
+            <div class="imieForm">
+                <h3>Imię: </h3>
+                <input type="text" class="form-control w-50" id="imiePracownika" placeholder="Imię: " (change)="OnChange(imiePracownikaa.value, nazwiskoPracownikaa.value, stanowiskoPracownikaa.value)" #imiePracownikaa>
+            </div>
+
+            <div class="nazwiskoForm">
+                <h3>Nazwisko: </h3>
+                <input type="text" class="form-control w-50" id="nazwiskoPracownika" placeholder="Nazwisko: " (change)="OnChange(imiePracownikaa.value, nazwiskoPracownikaa.value, stanowiskoPracownikaa.value)" #nazwiskoPracownikaa>
+            </div>
+
+            <div class="stanowiskoForm">
+                <h3>Stanowisko: </h3>
+                <select class="form-control w-50" id="stanowiskoPracownika" (change)="OnChange(imiePracownikaa.value, nazwiskoPracownikaa.value, stanowiskoPracownikaa.value)" #stanowiskoPracownikaa>
+                    <option>Kierownik</option>
+                    <option>Starszy programista</option>
+                    <option>Młodszy programista</option>
+                    <option>Tester</option>
+                </select>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

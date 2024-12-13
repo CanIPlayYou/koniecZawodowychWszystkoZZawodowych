@@ -1,0 +1,30 @@
+{
+    "library": {
+      "name": "Biblioteka",
+      "location": "Lębork",
+      "books": [
+        {
+          "title": "Wiedźmin: Ostatnie Życzenie",
+          "author": "Andrzej Sapkowski",
+          "year": 1993,
+          "genre": "Fantasy",
+          "available": true
+        },
+        {
+          "title": "Lalka",
+          "author": "Bolesław Prus",
+          "year": 1890,
+          "genre": "Powieść",
+          "available": false
+        },
+        {
+          "title": "Pan Tadeusz",
+          "author": "Adam Mickiewicz",
+          "year": 1834,
+          "genre": "Epopeja",
+          "available": true
+        }
+      ]
+    }
+  }
+  

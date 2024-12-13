@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#4c566a"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/LogowanieTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Logowanie:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Wpisz e-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Wpisz hasło"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/zalogujButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#3b4252"
+        android:text="Zaloguj"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="8dp"
+        android:text="Błędne hasło. Spróbuj ponownie"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+</LinearLayout>

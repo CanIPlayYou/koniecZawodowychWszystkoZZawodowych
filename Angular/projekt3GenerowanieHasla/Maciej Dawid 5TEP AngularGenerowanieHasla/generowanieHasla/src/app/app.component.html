@@ -1,0 +1,20 @@
+<div class="boxesDiv">
+
+  <div class="leftSide">
+
+    <app-dane-pracownika (sendData)="getData($event)"></app-dane-pracownika>
+
+  </div>
+
+  <div class="rightSide">
+
+    <app-generowanie-hasla (sendPassword)="getPassword($event)"></app-generowanie-hasla>
+
+  </div>
+
+</div>
+
+<div class="viewDane">
+  <button type="submit" class="btn btn-primary mb-3" (click)="zatwierdzButton()">Zatwierdź</button>
+  <app-view-dane [viewData]="dataString"></app-view-dane>
+</div>

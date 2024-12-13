@@ -1,0 +1,31 @@
+.generowanieHaslaMainWindow{
+    text-align: center;
+}
+
+.ileZnakowForm{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maleIWielkieForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyfryForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.znakiSpecjalneForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
